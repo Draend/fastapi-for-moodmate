@@ -9,11 +9,11 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 # Load Models
 
 # Load PCA and trained model
-pca = joblib.load('C:/Users/Dwayne CKC/Desktop/fyp_api/pcaF.pkl')
-model = joblib.load('C:/Users/Dwayne CKC/Desktop/fyp_api/logistic_regression_modelF.pkl')
+pca = joblib.load('pcaF.pkl')
+model = joblib.load('logistic_regression_modelF.pkl')
 
 # Load BERT tokenizer and model
-bert_model_path = 'C:/Users/Dwayne CKC/Desktop/fyp_api/bert_modelM2'
+bert_model_path = 'bert_modelM2'
 tokenizer = AutoTokenizer.from_pretrained(bert_model_path)
 bert_model = AutoModel.from_pretrained(bert_model_path)
 
